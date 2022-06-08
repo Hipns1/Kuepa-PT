@@ -1,0 +1,90 @@
+.menu_container {
+    height: 100%;
+    width: 80px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #2b2d42;
+
+    .menu_top {
+        .menu_logo {
+            width: 100%;
+            text-align: center;
+            margin-top: 25px;
+
+            img {
+                width: 70%;
+            }
+        }
+
+        .menu_options {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            align-items: center;
+            height: 150px;
+            margin-top: 50px;
+
+            .menu_option {
+
+                label {
+                    color: #fff;
+
+                    i {
+                        font-size: 20px;
+                        cursor: pointer;
+                    }
+                }
+
+                input {
+                    display: none;
+                }
+
+                input:checked+label {
+                    max-width: 80px;
+                    color: #ff6f29;
+                    display: flex;
+                    flex-direction: row-reverse;
+                    justify-content: center;
+                    align-items: center;
+
+                    &::after {
+                        content: "";
+                        box-sizing: border-box;
+                        display: block;
+                        position: absolute;
+                        left: 0;
+                        width: 2px;
+                        height: 20px;
+                        background-color: #ff6f29;
+                        border-bottom-right-radius: 10px;
+                        border-top-right-radius: 10px;
+                    }
+                }
+            }
+        }
+    }
+
+    .menu_user {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+        margin-bottom: 50px;
+
+        i {
+            font-size: 20px;
+            color: #fff;
+            margin-bottom: 20px;
+            cursor: pointer;
+        }
+
+        img {
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            object-fit: cover;
+        }
+    }
+}
