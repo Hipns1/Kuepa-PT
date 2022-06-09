@@ -18,10 +18,6 @@ _Necesitas tener instalado [Node.js](https://nodejs.org/en/) en tu computadora_
 
 _Corre el comando `npm run build` para generar una build de producción que quedara guardada en la carpeta /build que se encuentra en la raiz del proyecto_
 
-## Ejecutando las pruebas ⚙️
-
-_Para correr las pruebas automatizadas de este proyecto, utiliza el comando `npm run test`, y luego presiona la tecla **a** para correr todos los test._
-
 ## Despliegue 📦
 
 _Puedes ver el despliegue de esta página en: [Pokedex - JDPF](https://pokedex-562f3.web.app/)_
