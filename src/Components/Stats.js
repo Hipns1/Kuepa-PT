@@ -45,7 +45,12 @@ const Stats = () => {
                 </section>
             </section>
 
-            <section className={styles.stat_meta__container}>
+            <motion.section
+
+                initial={{ opacity: 0, x: 40 }}
+                animate={{ opacity: 1, x: 0 }}
+                transition={{ duration: 1.5 , ease: "easeOut" }}
+                className={styles.stat_meta__container}>
                 <h1>Meta grupal</h1>
                 <div className={styles.stat_meta}>
                     <h2>Leads obtenidos <span>200/400</span></h2>
@@ -59,7 +64,7 @@ const Stats = () => {
                         <div className={styles.stat_fill}></div>
                     </div>
                 </div>
-            </section>
+            </motion.section>
         </motion.div>
     )
 }
