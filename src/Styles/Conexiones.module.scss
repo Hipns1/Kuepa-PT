@@ -1,0 +1,69 @@
+.conexiones_container {
+    padding: 20px 50px;
+
+    .conexiones {
+        width: 550px;
+        background-color: #ffffff;
+        border-radius: 16px;
+        margin-top: 70px;
+        padding-bottom: 30px;
+
+        h1 {
+            font-size: 22px;
+            font-weight: 600;
+            height: 50px;
+            display: flex;
+            align-items: center;
+            margin-left: 16px;
+        }
+
+        table {
+            width: 100%;
+
+            tbody {
+                height: 45px;
+
+                tr {
+                    .table_name {
+                        display: flex;
+                        align-items: center;
+
+                        &::before {
+                            content: "";
+                            width: 4px;
+                            height: 45px;
+                            background-color: #a84a8f;
+                            display: block;
+                            margin-right: 10px;
+                        }
+                    }
+
+                    .table_llamada {
+                        font-size: 16px;
+                        font-weight: 500;
+                        padding: 0 10px;
+
+                        span {
+                            font-weight: 300;
+                            color: #959aa0;
+                            font-size: 12px;
+                        }
+                    }
+
+                    .table_icons {
+                        text-align: center;
+
+                        i {
+                            margin: 0 5px;
+                            color: gray;
+                        }
+                    }
+                }
+            }
+
+            tbody:nth-child(odd) {
+                background-color: #ecf3fd
+            }
+        }
+    }
+}

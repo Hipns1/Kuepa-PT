@@ -1,4 +1,13 @@
 .filter_container {
+    border: 2px solid red;
+
+    @media (max-width: 768px) {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
     input {
         height: 40px;
         width: 200px;
@@ -8,5 +17,10 @@
         border-radius: 10px;
         padding: 16px;
         color: #a4a3a9;
+
+        @media (max-width: 768px) {
+            width: 270px;
+            margin-top: 16px;
+        }
     }
 }
