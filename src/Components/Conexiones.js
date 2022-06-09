@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import styles from "../Styles/Conexiones.module.scss";
 import { getData } from '../utils/getData';
+import PlanCard from './PlanCard';
 
 const Conexiones = () => {
 
@@ -17,11 +18,9 @@ const Conexiones = () => {
         handleData();
     }, []);
 
-    console.log(conexiones);
-
     return (
         <div className={styles.conexiones_container}>
-            <div className={styles.conexiones}>
+            <section className={styles.conexiones}>
                 <h1>Conexiones de agenda para hoy</h1>
                 <table >
                     {
@@ -45,11 +44,19 @@ const Conexiones = () => {
                         ))
                     }
                 </table>
-            </div>
+            </section>
 
-            <div className={styles.plan}>
-
-            </div>
+            <section className={styles.plan}>
+                <div className={styles.plan_title}>
+                    <h1>Tuplan de hoy</h1>
+                    <h2>Ir a la gestion de llamados</h2>
+                </div>
+                <div className={styles.plan_card__container}>
+                    <PlanCard title={"Leads de primer contacto"} id={1} />
+                    <PlanCard title={"Leads por confirmar cita"} id={2} />
+                    <PlanCard title={"Leads de último contacto"} id={3} />
+                </div>
+            </section>
         </div>
     )
 }

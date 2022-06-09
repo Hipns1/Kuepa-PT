@@ -1,5 +1,6 @@
 .conexiones_container {
     padding: 20px 50px;
+    display: flex;
 
     @media (max-width: 1200px) {
         display: flex;
@@ -8,90 +9,176 @@
         justify-content: center;
         align-items: center;
     }
+}
 
-    .conexiones {
-        width: 550px;
-        background-color: #ffffff;
-        border-radius: 16px;
-        margin-top: 70px;
-        padding-bottom: 30px;
+.conexiones {
+    width: 550px;
+    background-color: #ffffff;
+    border-radius: 16px;
+    margin-top: 70px;
 
-        @media (max-width: 768px) {
-            width: 90%;
-        }
+    @media (max-width: 768px) {
+        width: 90%;
+    }
 
-        h1 {
-            font-size: 22px;
-            font-weight: 600;
-            height: 50px;
-            display: flex;
-            align-items: center;
-            margin-left: 16px;
-        }
+    h1 {
+        font-size: 22px;
+        font-weight: 600;
+        height: 50px;
+        display: flex;
+        align-items: center;
+        margin-left: 16px;
+    }
 
-        table {
-            width: 100%;
+    table {
+        width: 100%;
 
-            tbody {
-                height: 45px;
+        tbody {
+            height: 45px;
 
-                tr {
-                    .table_name {
-                        display: flex;
-                        align-items: center;
-                        font-size: 16px;
+            tr {
+                .table_name {
+                    display: flex;
+                    align-items: center;
+                    font-size: 16px;
+
+                    @media (max-width: 768px) {
+                        font-size: 12px;
+                    }
+
+                    &::before {
+                        content: "";
+                        width: 4px;
+                        height: 45px;
+                        background-color: #a84a8f;
+                        display: block;
+                        margin-right: 10px;
+                    }
+                }
+
+                .table_llamada {
+                    font-size: 16px;
+                    font-weight: 500;
+                    padding: 0 10px;
+
+                    @media (max-width: 768px) {
+                        font-size: 12px;
+                    }
+
+                    span {
+                        font-weight: 300;
+                        color: #959aa0;
+                        font-size: 12px;
+
+                        @media (max-width: 768px) {
+                            font-size: 10px;
+                        }
+                    }
+                }
+
+                .table_icons {
+                    text-align: center;
+
+                    i {
+                        margin: 0 5px;
+                        color: gray;
 
                         @media (max-width: 768px) {
                             font-size: 12px;
-                        }
-
-                        &::before {
-                            content: "";
-                            width: 4px;
-                            height: 45px;
-                            background-color: #a84a8f;
-                            display: block;
-                            margin-right: 10px;
-                        }
-                    }
-
-                    .table_llamada {
-                        font-size: 16px;
-                        font-weight: 500;
-                        padding: 0 10px;
-
-                        @media (max-width: 768px) {
-                            font-size: 12px;
-                        }
-
-                        span {
-                            font-weight: 300;
-                            color: #959aa0;
-                            font-size: 12px;
-
-                            @media (max-width: 768px) {
-                                font-size: 10px;
-                            }
-                        }
-                    }
-
-                    .table_icons {
-                        text-align: center;
-
-                        i {
-                            margin: 0 5px;
-                            color: gray;
-
-                            @media (max-width: 768px) {
-                                font-size: 12px;
-                            }
                         }
                     }
                 }
             }
+        }
 
-            tbody:nth-child(odd) {
-                background-color: #ecf3fd
+        tbody:nth-child(odd) {
+            background-color: #ecf3fd;
+        }
+    }
+}
+
+.plan {
+    margin-top: 20px;
+    margin-left: 80px;
+    border-radius: 16px;
+    background-color: #f4f8fb;
+    padding: 16px;
+    width: 550px;
+
+    .plan_title {
+        display: flex;
+        align-items: center;
+
+        h1 {
+            font-size: 26px;
+        }
+
+        h2 {
+            font-size: 18px;
+            font-weight: 300;
+            margin-left: 50px;
+        }
+    }
+
+    .plan_card__container {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+
+        .card {
+            width: 250px;
+            height: 130px;
+            border-radius: 16px;
+            display: flex;
+            align-items: center;
+            background-color: #ffffff;
+            margin-top: 20px;
+
+            .card_cuadro {
+                min-width: 110px;
+                min-height: 110px;
+                margin-left: 10px;
+                border-radius: 16px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+
+                .card_subcuadro {
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    width: 70px;
+                    height: 70px;
+                    border-radius: 50%;
+                    background-color: #ffffff;
+
+                    span {
+                        font-size: 35px;
+                        font-weight: 600;
+                    }
+                }
+            }
+
+            .card_text {
+                display: flex;
+                flex-direction: column;
+                margin-left: 10px;
+                margin-right: 6px;
+
+                h1 {
+                    font-size: 16px;
+                    font-weight: 400;
+                }
+
+                span {
+                    font-size: 18px;
+                    margin-top: 10px;
+
+                    i {
+                        font-size: 18px;
+                        margin-right: 5px;
+                    }
+                }
             }
         }
     }

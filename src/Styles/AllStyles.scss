@@ -6,7 +6,7 @@
     scroll-behavior: smooth !important;
 }
 
-.all_container{
+.all_container {
     width: 100%;
     min-height: 100vh;
     display: flex;
@@ -14,3 +14,44 @@
     justify-content: space-between;
     background-color: #2b2d42;
 }
+
+//colores para los planes
+#plan_1 {
+    background: rgb(133, 181, 251);
+    background: linear-gradient(0deg, #85b5fb 0%, #ab86f7 100%);
+}
+#plan_text__1 {
+    background: rgb(133, 181, 251);
+    background: -webkit-linear-gradient(to bottom, #ab86f7, #85b5fb);
+    background: linear-gradient(to bottom, #ab86f7, #85b5fb);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+}
+
+#plan_2 {
+    background: rgb(133, 181, 251);
+    background: linear-gradient(0deg, #70f6d2 0%, #058290 100%);
+}
+#plan_text__2 {
+    background: rgb(133, 181, 251);
+    background: -webkit-linear-gradient(to bottom, #058290, #70f6d2);
+    background: linear-gradient(to bottom, #058290, #70f6d2);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+}
+
+#plan_3 {
+    background: rgb(133, 181, 251);
+    background: linear-gradient(0deg, #ed5c7b 0%, #b74791 100%);
+}
+#plan_text__3 {
+    background: rgb(133, 181, 251);
+    background: -webkit-linear-gradient(to bottom, #b74791, #ed5c7b);
+    background: linear-gradient(to bottom, #b74791, #ed5c7b);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+}
+
