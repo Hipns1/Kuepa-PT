@@ -9,7 +9,6 @@ const Filter = () => {
     const getDate = () => {
         const todayDate = new Date().toISOString().slice(0, 10);
         setDate(todayDate);
-        console.log(todayDate);
     }
 
     useEffect(() => {

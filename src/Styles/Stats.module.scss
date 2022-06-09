@@ -1,5 +1,63 @@
 .stat_container {
     border: 2px solid red;
+    padding: 0 50px;
+    display: flex;
+    flex-wrap: wrap;
 
+    .stat_title {
+        width: 100%;
+        border: 2px solid green;
+        margin: 50px 0px 20px 0px;
 
+        h1 {
+            color: #2b2e3e;
+            font-size: 36px;
+        }
+    }
+
+    .stat_stat {
+        background-color: #ffffff;
+        width: 700px;
+        border-radius: 16px;
+        padding: 16px;
+        display: flex;
+
+        .stat_lead {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            align-items: center;
+
+            .stat_text {
+                width: 230px;
+                display: flex;
+                margin-left: 20px;
+
+                h1 {
+                    width: 100px;
+                    color: #2b2e3e;
+                    font-size: 16px;
+                    font-weight: 600;
+                }
+
+                span {
+                    width: 130px;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    font-size: 24px;
+                    color: #2b2e3e;
+                    font-weight: 550;
+                }
+            }
+        }
+    }
+
+    .stat_meta {
+        width: 200px;
+        background-color: #ffffff;
+        border-radius: 16px;
+        margin-left: 40px;
+        padding: 16px;
+    }
 }
