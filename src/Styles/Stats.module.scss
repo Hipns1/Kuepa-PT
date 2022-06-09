@@ -17,10 +17,18 @@
 
     .stat_stat {
         background-color: #ffffff;
-        width: 700px;
+        width: 640px;
         border-radius: 16px;
-        padding: 16px;
         display: flex;
+        height: 180px;
+        padding: 0 16px;
+
+        .stat_content {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-right: 20px;
+        }
 
         .stat_lead {
             display: flex;
@@ -29,35 +37,67 @@
             align-items: center;
 
             .stat_text {
-                width: 230px;
+                width: 205px;
                 display: flex;
-                margin-left: 20px;
 
                 h1 {
-                    width: 100px;
+                    width: 85px;
                     color: #2b2e3e;
                     font-size: 16px;
                     font-weight: 600;
                 }
 
                 span {
-                    width: 130px;
+                    width: 120px;
                     display: flex;
                     align-items: center;
                     justify-content: center;
                     font-size: 24px;
                     color: #2b2e3e;
-                    font-weight: 550;
+                    font-weight: 500;
                 }
             }
         }
     }
 
-    .stat_meta {
-        width: 200px;
+    .stat_meta__container {
+        width: 250px;
         background-color: #ffffff;
         border-radius: 16px;
         margin-left: 40px;
         padding: 16px;
+        height: 180px;
+
+        h1 {
+            width: 100%;
+            margin-bottom: 15px;
+        }
+
+        .stat_meta {
+            h2 {
+                color: #2b2e3e;
+                font-size: 16px;
+                font-weight: 400;
+                display: flex;
+                justify-content: space-between;
+                margin-top: 5px;
+            }
+
+            .stat_bar {
+                height: 10px;
+                margin-top: 5px;
+                border-radius: 8px;
+                background-color: #e2e2e2;
+                margin-bottom: 20px;
+
+                .stat_fill {
+                    height: 100%;
+                    width: 50%;
+                    border-radius: 8px;
+                    background: rgb(228, 126, 159);
+                    background: linear-gradient(90deg, rgba(228, 126, 159, 1) 0%, rgba(253, 164, 121, 1) 100%);
+                }
+            }
+        }
     }
 }

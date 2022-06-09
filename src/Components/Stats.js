@@ -39,15 +39,20 @@ const Stats = () => {
                     </div>
                 </section>
             </section>
-            <section className={styles.stat_meta}>
-                <h1>Meta</h1>
-                <div>
-                    <h1>Leads obtenidos <span>200/400</span></h1>
-                    
+
+            <section className={styles.stat_meta__container}>
+                <h1>Meta grupal</h1>
+                <div className={styles.stat_meta}>
+                    <h2>Leads obtenidos <span>200/400</span></h2>
+                    <div className={styles.stat_bar}>
+                        <div className={styles.stat_fill}></div>
+                    </div>
                 </div>
-                <div>
-                    <h1>Matriculas realizadas <span>50/100</span></h1>
-                    
+                <div className={styles.stat_meta}>
+                    <h2>Matriculas realizadas <span>50/100</span></h2>
+                    <div className={styles.stat_bar}>
+                        <div className={styles.stat_fill}></div>
+                    </div>
                 </div>
             </section>
         </div>
