@@ -8,6 +8,7 @@
         padding: 0px;
         justify-content: center;
         align-items: center;
+        padding-bottom: 50px;
     }
 }
 
@@ -19,6 +20,7 @@
 
     @media (max-width: 768px) {
         width: 90%;
+        margin-top: 40px;
     }
 
     h1 {
@@ -104,19 +106,38 @@
     background-color: #f4f8fb;
     padding: 16px;
     width: 550px;
+    border: 2px solid red;
+
+    @media (max-width:1200px) {
+        margin-left: 0;
+    }
+
+    @media (max-width:768px) {
+        width: 90%;
+    }
 
     .plan_title {
         display: flex;
         align-items: center;
 
+        @media (max-width:768px) {
+            justify-content: center;
+            margin-bottom: 10px;
+        }
+
         h1 {
             font-size: 26px;
+            
         }
 
         h2 {
             font-size: 18px;
             font-weight: 300;
             margin-left: 50px;
+
+            @media (max-width:768px) {
+                display: none;
+            }
         }
     }
 
@@ -124,6 +145,10 @@
         display: flex;
         flex-wrap: wrap;
         justify-content: space-between;
+
+        @media (max-width:768px) {
+            justify-content: center;
+        }
 
         .card {
             width: 250px;

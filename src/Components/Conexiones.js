@@ -48,7 +48,7 @@ const Conexiones = () => {
 
             <section className={styles.plan}>
                 <div className={styles.plan_title}>
-                    <h1>Tuplan de hoy</h1>
+                    <h1>Tu plan de hoy</h1>
                     <h2>Ir a la gestion de llamados</h2>
                 </div>
                 <div className={styles.plan_card__container}>
