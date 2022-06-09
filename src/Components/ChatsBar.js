@@ -2,6 +2,7 @@ import React, { useEffect, useState } from 'react';
 import styles from "../Styles/ChatBar.module.scss";
 import { getData } from '../utils/getData';
 import whatsappImg from "../Styles/Images/whatsapp.png";
+
 const ChatsBar = () => {
 
     const url = "https://api.opendota.com/api/proPlayers"
