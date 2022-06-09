@@ -34,7 +34,7 @@ const ChatsBar = () => {
                         chat?.map((chat, index) => (
                             <div key={index} className={styles.chat_card}>
                                 <h1>
-                                    <img src={whatsappImg} />
+                                    <img src={whatsappImg} alt="img"/>
                                     Whatsapp
                                 </h1>
                                 <h2>{chat.name}</h2>
