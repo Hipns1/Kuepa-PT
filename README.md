@@ -20,7 +20,7 @@ _Corre el comando `npm run build` para generar una build de producción que qued
 
 ## Despliegue 📦
 
-_Puedes ver el despliegue de esta página en: [Pokedex - JDPF](https://pokedex-562f3.web.app/)_
+_Puedes ver el despliegue de esta página en: [Kuepa - JDPF](https://kuepa-pt-jdpf.netlify.app/)_
 
 ## Construido con 🛠️
 
