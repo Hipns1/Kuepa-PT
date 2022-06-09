@@ -1,12 +1,12 @@
 # PRUEBA TECNICA  - JESUS DAVID PEREZ FERRER
 
-_En esta prueba desarrollamos una pagina web consumiendo la API publica de Rick y Morty, en esta podras consultar todos los personajes, poder filtrarlos por nombre exacto y nombre aproximado; ademas de incluir un registro episodios y locaciones de la serie. Puedes registrarte con correo/email, o haciendo uso de tu cuenta de Google._
+_En esta prueba desarrollamos una pagina que consiste en una landing page, se siguieron cumple con todos los requerimientos enviados en el PDF de la prueba. Para el desarollo fue usada la libreria ReactJS._
 
 ## Setup 🚀
 
 _Necesitas tener instalado [Node.js](https://nodejs.org/en/) en tu computadora_
 
-1. Clona el repositorio. Puedes usar el siguiente enlace: (https://github.com/Hipns1/KUTAI-PT).
+1. Clona el repositorio. Puedes usar el siguiente enlace: (https://github.com/Hipns1/Kuepa-PT).
 2. Ingresa el comando `$ npm install` para instalar todas las dependencias del proyecto.
 
 ### Corriendo el proyecto 📋
@@ -31,13 +31,8 @@ _Puedes ver el despliegue de esta página en: [Pokedex - JDPF](https://pokedex-5
 _Las herramientas que usé para construir esta pagina son las siguientes:_
 
 - [React.js](https://es.reactjs.org/) - Libreria de JS usada
-- [Firebase](https://firebase.google.com/docs/web/setup) - Autenticacion de usuarios
 - [Sass](https://sass-lang.com/) - Preprocesador de CSS usado
 - [Framer-Motion](https://framer.com/motion/) - Animaciones
-- [React-Router](https://reacttraining.com/react-router/) - Manejador de rutas
-- [React-Redux](https://redux.js.org/) - Manejador de estados
-- [Formik](https://formik.org/) - Manejador de formularios
-- [Yup](https://www.npmjs.com/package/yup) - Manejador de validaciones en los formularios
 
 ## Autor ✒️
 
