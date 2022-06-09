@@ -5,9 +5,15 @@
     border-bottom-left-radius: 60px;
     border-top-left-radius: 60px;
     margin-left: 80px;
+    margin-right: 120px;
+
+    @media (max-width: 1300px) {
+        margin-right: 0;
+        width: 93.3%;
+    }
 
     @media (max-width: 768px) {
-        margin-left: 60px;        
+        margin-left: 60px;
     }
 
     .dash_top {

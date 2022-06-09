@@ -106,7 +106,6 @@
     background-color: #f4f8fb;
     padding: 16px;
     width: 550px;
-    border: 2px solid red;
 
     @media (max-width:1200px) {
         margin-left: 0;
@@ -127,7 +126,7 @@
 
         h1 {
             font-size: 26px;
-            
+
         }
 
         h2 {
@@ -135,7 +134,7 @@
             font-weight: 300;
             margin-left: 50px;
 
-            @media (max-width:768px) {
+            @media (max-width:1300px) {
                 display: none;
             }
         }
