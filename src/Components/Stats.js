@@ -1,6 +1,7 @@
 import React from 'react';
 import styles from '../Styles/Stats.module.scss';
 import { CircularProgressBar } from "@tomik23/react-circular-progress-bar";
+import { motion } from "framer-motion";
 
 const Stats = () => {
 
@@ -15,7 +16,11 @@ const Stats = () => {
     };
 
     return (
-        <div className={styles.stat_container}>
+        <motion.div
+            initial={{ opacity: 0 }}
+            animate={{ opacity: 1 }}
+            transition={{ duration: 2, ease: "easeOut" }}
+            className={styles.stat_container}>
             <section className={styles.stat_title}>
                 <h1>Hola, Jorge</h1>
             </section>
@@ -55,7 +60,7 @@ const Stats = () => {
                     </div>
                 </div>
             </section>
-        </div>
+        </motion.div>
     )
 }
 

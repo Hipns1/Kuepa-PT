@@ -2,6 +2,7 @@ import React, { useEffect, useState } from 'react';
 import styles from "../Styles/Conexiones.module.scss";
 import { getData } from '../utils/getData';
 import PlanCard from './PlanCard';
+import { motion } from "framer-motion";
 
 const Conexiones = () => {
 
@@ -19,7 +20,11 @@ const Conexiones = () => {
     }, []);
 
     return (
-        <div className={styles.conexiones_container}>
+        <motion.div
+            initial={{ opacity: 0 }}
+            animate={{ opacity: 1 }}
+            transition={{ duration: 2   , ease: "easeOut" }}
+            className={styles.conexiones_container}>
             <section className={styles.conexiones}>
                 <h1>Conexiones de agenda para hoy</h1>
                 <table >
@@ -57,7 +62,7 @@ const Conexiones = () => {
                     <PlanCard title={"Leads de último contacto"} id={3} />
                 </div>
             </section>
-        </div>
+        </motion.div>
     )
 }
 

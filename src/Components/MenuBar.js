@@ -2,10 +2,15 @@ import React from 'react';
 import userImg from "../Styles/Images/user.jpg";
 import logoImg from "../Styles/Images/logoImg.png";
 import styles from "../Styles/MenuBar.module.scss";
+import { motion } from "framer-motion";
 
 const MenuBar = () => {
     return (
-        <div className={styles.menu_container}>
+        <motion.div
+            initial={{ opacity: 0, x: -100 }}
+            animate={{ opacity: 1, x: 0 }}
+            transition={{ duration: 1.5, ease: "easeOut" }}
+            className={styles.menu_container}>
 
             <section className={styles.menu_top}>
                 <section className={styles.menu_logo}>
@@ -38,7 +43,7 @@ const MenuBar = () => {
                 <i className="fa-solid fa-chalkboard"></i>
                 <img src={userImg} alt="user" />
             </section>
-        </div>
+        </motion.div>
     )
 }
 

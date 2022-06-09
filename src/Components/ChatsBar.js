@@ -2,6 +2,7 @@ import React, { useEffect, useState } from 'react';
 import styles from "../Styles/ChatBar.module.scss";
 import { getData } from '../utils/getData';
 import whatsappImg from "../Styles/Images/whatsapp.png";
+import { motion } from "framer-motion";
 
 const ChatsBar = () => {
 
@@ -20,7 +21,11 @@ const ChatsBar = () => {
 
     return (
         <div className={styles.chat_container}>
-            <div className={styles.chat}>
+            <motion.div
+                initial={{ opacity: 0, x: 100 }}
+                animate={{ opacity: 1, x: 0 }}
+                transition={{ duration: 1.5, ease: "easeOut" }}
+                className={styles.chat}>
                 <div className={styles.chat_header}>
                     <div></div>
                 </div>
@@ -38,7 +43,7 @@ const ChatsBar = () => {
                         ))
                     }
                 </div>
-            </div>
+            </motion.div>
         </div>
     )
 }
