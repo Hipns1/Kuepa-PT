@@ -8,7 +8,7 @@ const Container = () => {
         <div className='all_container'>
             <MenuBar />
             <Dashboard />
-            <ChatsBar />
+            {/* <ChatsBar /> */}
         </div>
     )
 }

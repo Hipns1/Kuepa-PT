@@ -9,6 +9,10 @@
     position: fixed;
     top: 0;
 
+    @media (max-width: 768px) {
+        width: 60px;
+    }
+
     .menu_top {
         .menu_logo {
             width: 100%;
